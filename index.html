@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+</head>
+<body>
+    <script>
+        // Exercício 1
+        let minhaIdade = 25;
+        document.write("Minha idade é " + minhaIdade + " anos.<br>");
+
+        // Exercício 2
+        let x = 10;
+        let y = 20;
+        let z = x + y;
+        document.write("O resultado da soma de " + x + " e " + y + " é " + z + ".<br>");
+
+        // Exercício 3
+        let valorTotalCompra = 149.90;
+        let quantidadeParcelas = 2;
+        let valorParcela = valorTotalCompra / quantidadeParcelas;
+        document.write("O valor total da compra foi R$" + valorTotalCompra.toFixed(2) + ".<br>");
+        document.write("Forma de pagamento: " + quantidadeParcelas + "x de R$" + valorParcela.toFixed(2) + ".<br>");
+
+        // Exercício 4
+        let minutos = 120;
+        let segundos = minutos * 60;
+        document.write(minutos + " minutos equivale a " + segundos + " segundos.<br>");
+
+        // Exercício 5
+        let nomeAluno = "João";
+        let nota1 = 8;
+        let nota2 = 7;
+        let nota3 = 9;
+        let media = (nota1 + nota2 + nota3) / 3;
+        document.write("O aluno " + nomeAluno + " ficou com média " + media.toFixed(2) + ".<br>");
+
+        // Exercício 6
+        let A = 10;
+        let B = 20;
+        let temp = A;
+        A = B;
+        B = temp;
+        document.write("Agora, A = " + A + " e B = " + B + ".<br>");
+
+        // Exercício 7
+        let totalEleitores = 1000;
+        let votosBrancos = 50;
+        let votosNulos = 30;
+        let votosValidos = 920;
+        let percentualBrancos = (votosBrancos / totalEleitores) * 100;
+        let percentualNulos = (votosNulos / totalEleitores) * 100;
+        let percentualValidos = (votosValidos / totalEleitores) * 100;
+        document.write("Percentual de votos em branco: " + percentualBrancos.toFixed(2) + "%<br>");
+        document.write("Percentual de votos nulos: " + percentualNulos.toFixed(2) + "%<br>");
+        document.write("Percentual de votos válidos: " + percentualValidos.toFixed(2) + "%<br>");
+
+        // Exercício 8
+        let valor1 = 15;
+        let valor2 = 10;
+        if (valor1 === valor2) {
+            document.write("Números iguais.<br>");
+        } else if (valor1 > valor2) {
+            document.write("Primeiro é maior.<br>");
+        } else {
+            document.write("Segundo é maior.<br>");
+        }
+
+        // Exercício 9
+        let quantidadeMaca = 15;
+        let precoUnitario = quantidadeMaca >= 12 ? 0.25 : 0.30;
+        let valorTotalCompraMaca = quantidadeMaca * precoUnitario;
+        document.write("Valor total da compra de maçãs: R$" + valorTotalCompraMaca.toFixed(2) + ".<br>");
+
+        // Exercício 10
+        let nomeUsuario = "Pedro";
+        let idadeUsuario = 22;
+        let anoAtual = new Date().getFullYear();
+        let anoNascimento = anoAtual - idadeUsuario;
+        document.write("Nome: " + nomeUsuario + ", Idade: " + idadeUsuario + " anos, nasceu em " + anoNascimento + ".<br>");
+
+        // Exercício 11
+        let numero = 7;
+        if (numero % 2 === 0) {
+            alert("Número é par!");
+        } else {
+            alert("Número é ímpar!");
+        }
+
+        // Exercício 12
+        let anoAtual = new Date().getFullYear();
+        let anoNascimento = 1990; // Substitua pelo ano de nascimento do usuário
+        let idade = anoAtual - anoNascimento;
+        if (idade >= 18) {
+            document.write("Você pode votar este ano.<br>");
+        } else {
+            document.write("Você não pode votar este ano.<br>");
+        }
+    </script>
+</body>
+</html>
